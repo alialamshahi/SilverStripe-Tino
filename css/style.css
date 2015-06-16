@@ -19,6 +19,7 @@ License:		The MIT License (MIT)
 
 - Page styles
 	- Links
+- Modifying Bootstrap
 - Header and Navigation
 	- Branding
 	- Navigation
@@ -81,6 +82,16 @@ a:focus, a:hover {
   color: #255a61;
   text-decoration: none;
 }
+/* ==============================
+   Modifying Bootstrap
+   ============================== */
+
+@media (min-width: 1350px) {
+  .container {
+    width: 1320px;
+  }
+}
+
 /* ==============================
    Header and Navigation
    ============================== */
