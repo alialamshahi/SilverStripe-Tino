@@ -1,5 +1,5 @@
 # Tino
-A Clean SilverStripe Template
+A Clean Responsive SilverStripe Template
 
 # Installing The Template
 
