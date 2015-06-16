@@ -17,3 +17,74 @@ Last change:    No Changes
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [Table of contents]
+
+/*------------------------------------------------------------------
+# [Color codes]
+
+# Dark (active elements, logotype, text) #464e4d
+# Page Background #f8f8f9
+# Main Color (hero bg) #249176 [Green]
+# Secondary Color (links) #1d939b [Blue]
+# Dark BG (footer) #344044
+# Gray BG Lighter #9cbbc1
+# White BG #fff
+# Mid color (texts on dark bg) #5d97a0
+
+# */
+
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body:               14px/1.6 "Open Sans", arial, sans-serif;
+Headings:           "Open Sans", arial, sans-serif;
+
+-------------------------------------------------------------------*/
+
+/* ==============================
+   Page styles
+   ============================== */
+body {
+  background-color: #f8f8f9;
+  color: #464e4d;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* ---- Links ---- */
+a {
+  text-decoration: none;
+  color: #1d939b;
+  -ms-transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+a:focus, a:hover {
+  color: #255a61;
+  text-decoration: none;
+}
+
+/* ==============================
+   Typography styles
+   ============================== */
+.page-header {
+  border-bottom: medium none;
+  margin: 20px 0;
+  padding-bottom: 4px;
+}
+.page-header h1 {
+    color: rgb(29, 147, 155);
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 600;
+}
+.page-header h1::after {
+    content: "";
+    width: 60px;
+    position: absolute;
+    display: block;
+    border-bottom: 3.1px solid #1D939B;
+    margin: 10px 0;
+}
