@@ -11,12 +11,29 @@ Author URL:		http://alialamshahi.com
 License:		The MIT License (MIT)
 
 ------------------------------------------------------------------- 
-Last change:    No Changes
-
 
 -------------------------------------------------------------------*/
+
 /*------------------------------------------------------------------
 [Table of contents]
+
+- Page styles
+	- Links
+- Header and Navigation
+	- Branding
+	- Navigation
+	- Navbar Toggle
+	- Nav
+- Typography styles
+- Breadcrumb styles
+- Page Structure
+	- Box
+	- Footer
+	- Footer Navigation
+- Graphics
+	- Social Icons
+
+-------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
 # [Color codes]
@@ -30,8 +47,7 @@ Last change:    No Changes
 # White BG #fff
 # Mid color (texts on dark bg) #5d97a0
 
-# */
-
+-------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
 [Typography]
@@ -65,6 +81,88 @@ a:focus, a:hover {
   color: #255a61;
   text-decoration: none;
 }
+/* ==============================
+   Header and Navigation
+   ============================== */
+.navbar {
+  border: none solid transparent;
+  margin-bottom: 0;
+  min-height: 50px;
+  position: relative;
+}
+.navbar {
+  background: #fff;
+}
+/* Branding */
+.navbar-brand {
+  display: table;
+  float: left;
+  font-size: 20px;
+  font-weight: 700;
+  height: 80px;
+  line-height: 30px;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+.navbar-brand > h1 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 25px 0;
+}
+.navbar-brand > p {
+  color: #a3acab;
+  display: table-cell;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1.2px;
+  line-height: 14px;
+  margin: 0;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+a.navbar-brand {
+  color: #464E4D;
+  text-decoration: none;
+}
+/* Navigation */
+.navbar-nav > li > a {
+  line-height: 30px;
+  padding: 25px 20px;
+  text-transform: uppercase;
+}
+.navbar-nav > li > a {
+  color: #9cbbc1;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar-nav > li:last-child > a {
+  padding: 25px 0 25px 20px;
+}
+.navbar-nav > li.active > a {
+  color: #464E4D;
+}
+.nav.navbar-nav > li > a:focus, .nav.navbar-nav > li > a:hover {
+	background-color: transparent;
+  color: #1d939b;
+  outline: none;
+}
+/* Navbar Toggle */
+.navbar-toggle {
+    margin-top: 24px;
+}
+.navbar-toggle .icon-bar {
+    width: 23px;
+    height: 3px;
+    background: #464E4D;
+}
+/* Nav */
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: #F8F8F9;
+}
+.nav > li.active > a {
+    color: #464E4D;
+}
 
 /* ==============================
    Typography styles
@@ -88,3 +186,97 @@ a:focus, a:hover {
     border-bottom: 3.1px solid #1D939B;
     margin: 10px 0;
 }
+/* ==============================
+   Breadcrumb styles
+   ============================== */
+#breadcrumb {
+	margin-bottom: 20px;
+}
+.breadcrumb {
+  background-color: transparent;
+  /*border-bottom: 1px solid #9cbbc1;*/
+  border-radius: 0;
+  color: #889493;
+  list-style: outside none none;
+  margin-bottom: 0;
+  padding: 18px 0;
+}
+.breadcrumb a {
+  color: #9cbbc1;
+}
+.breadcrumb > .active {
+  color: #464E4D;
+}
+.breadcrumb > li + li::before {
+  color: #9cbbc1;
+  padding: 0 8px;
+}
+/* ==============================
+   Page Structure
+   ============================== */
+/* Box */
+.box > header {
+  background: #fff;
+  padding: 18px 15px;
+  border-bottom: 1px solid #f8f8f9;
+}
+.box > header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+}
+.box > article {
+	background: #fff;
+  padding: 10px;
+}
+/* Footer */
+.footer {
+  background: #344044;
+  color: #5d97a0;
+  font-size: 1.3rem;
+  margin-top: 80px;
+  padding: 60px 0;
+}
+.footer-brand h1 {
+  color: #f8f8f9;
+  font-size: 22px;
+  margin: 0;
+  padding: 8px 0;
+}
+/* Footer Navigation */
+#footer-navbar > .navbar-nav > li > a {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 10px 15px;
+}
+#footer-navbar > .navbar-nav > li > a {
+  color: #5d97a0;
+  font-weight: 600;
+  text-decoration: none;
+}
+#footer-navbar > .navbar-nav > li > a:focus, #footer-navbar > .navbar-nav > li > a:hover {
+  color: #9cbbc1;
+  text-decoration: none;
+}
+/* ==============================
+   Graphics
+   ============================== */
+/* Socila Icons */
+.footer-social {
+    height: 35px;
+    line-height: 35px;
+    text-align: right;
+	margin-bottom: 15px;
+}
+a.footer-social:hover {
+	text-decoration: none;
+}
+.social-icon {
+  background: #5d97a0;
+  border-radius: 50%;
+  color: #f8f8f9;
+  padding: 8px;
+}
+.social-icon:hover {
+	background: #9cbbc1;
