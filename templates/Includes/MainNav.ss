@@ -1,0 +1,22 @@
+    <header> 
+      <!-- Static navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="$AbsoluteBaseURL">
+            <h1>Site title</h1>
+            <p class="hidden-xs">Site Tagline/Slogan </p>
+            </a> </div>
+          <nav id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+<% loop $Menu(1) %>
+  <li><a class=”$LinkingMode” href=$Link title=”Go to the $Title page”>$MenuTitle</a></li>
+<% end_loop %>
+            </ul>
+          </nav>
+          <!--/.nav-collapse --> 
+        </div>
+        <!--/.container --> 
+      </nav>
+    </header>
