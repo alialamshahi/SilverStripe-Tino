@@ -20,6 +20,8 @@ License:		The MIT License (MIT)
 - Page styles
 	- Links
 - Modifying Bootstrap
+	- Forms
+	- Media Queries
 - Header and Navigation
 	- Branding
 	- Navigation
@@ -87,7 +89,30 @@ a:focus, a:hover {
 /* ==============================
    Modifying Bootstrap
    ============================== */
+/* Forms */
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {
+    margin-left: 0;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-user-select: none;
+	background: rgb(93, 151, 160);
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #F8F8F9;
+}
 
+/* Media Queries */
 @media (min-width: 1350px) {
   .container {
     width: 1320px;
