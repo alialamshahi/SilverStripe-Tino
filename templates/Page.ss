@@ -49,6 +49,7 @@ $MetaTags(false)
           <article>
             $Content
 			$Form
+			$Pagecomments
           </article>
         </div>
         <!--/.col-md-8 -->
