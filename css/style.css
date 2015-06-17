@@ -111,6 +111,11 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     border-radius: 4px;
     color: #F8F8F9;
 }
+button, input, optgroup, select, textarea {
+    padding: 4px 8px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+}
 
 /* Media Queries */
 @media (min-width: 1350px) {
