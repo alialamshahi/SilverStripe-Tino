@@ -26,7 +26,8 @@ $MetaTags
 <body>
 <div class="container-fluid">
   <div class="row">
-
+  
+<% include TopBar %> 
 <% include MainNav %> 
 
     <section id="breadcrumb" class="container">
