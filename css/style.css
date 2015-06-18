@@ -144,7 +144,15 @@ button, input, optgroup, select, textarea {
   padding: 0 15px;
   text-transform: uppercase;
 }
+.navbar-brand > img {
+  display: inline-block;
+  height: 50px;
+  margin-right: 10px;
+  vertical-align: calc(50% - 31px);
+  width: auto;
+}
 .navbar-brand > h1 {
+  display: inline-block;
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
