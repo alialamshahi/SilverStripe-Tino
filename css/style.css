@@ -322,6 +322,7 @@ a.navbar-brand {
 }
 /* Footer Navigation */
 #footer-navbar > .navbar-nav > li > a {
+  border: medium none;
   font-size: 12px;
   line-height: 20px;
   padding: 10px 15px;
