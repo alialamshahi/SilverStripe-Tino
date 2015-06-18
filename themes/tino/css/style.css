@@ -28,6 +28,8 @@ License:		The MIT License (MIT)
 	- Nav
 - Typography styles
 - Breadcrumb styles
+- HomePage Structure
+	- Hero
 - Page Structure
 	- Box
 	- Top Bar
@@ -264,6 +266,19 @@ a.navbar-brand {
 .breadcrumb > li + li::before {
   color: #9cbbc1;
   padding: 0 8px;
+}
+/* ==============================
+   HomePage Structure
+   ============================== */
+/* Hero */
+#hero {
+  background: #249176;
+  height: 70vh;
+  min-height: 320px;
+}
+/* Featured */
+#featured {
+  height: 110px;
 }
 /* ==============================
    Page Structure
