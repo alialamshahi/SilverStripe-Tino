@@ -13,7 +13,7 @@
           <nav id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
 <% loop $Menu(1) %>
-  <li><a class=”$LinkingMode” href=$Link title=”Go to the $Title page”>$MenuTitle</a></li>
+  <li><a class=$LinkingMode href=$Link title=”Go to the $Title page”>$MenuTitle</a></li>
 <% end_loop %>
             </ul>
           </nav>
