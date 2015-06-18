@@ -8,7 +8,7 @@
 			<img src="$ThemeDir/img/logo.png" alt="$SiteConfig.Title"/>
             <h1>$SiteConfig.Title</h1>
 			<% if $SiteConfig.Tagline %>
-            <p class="hidden-xs">$SiteConfig.Tagline</p>
+            <p class="hidden-xs hidden-sm">$SiteConfig.Tagline</p>
 			<% end_if %>
             </a> </div>
           <nav id="navbar" class="navbar-collapse collapse">
