@@ -2,7 +2,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-brand"> <a class="" href="$BaseHref">
-            <h1>Site title</h1>
+            <h1>$SiteConfig.Title</h1>
             </a> </div>
           <div class="footer-nav col-md-9">
             <nav id="footer-navbar">
