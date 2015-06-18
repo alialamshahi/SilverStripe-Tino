@@ -21,7 +21,6 @@ License:		The MIT License (MIT)
 	- Links
 - Modifying Bootstrap
 	- Forms
-	- Media Queries
 - Header and Navigation
 	- Branding
 	- Navigation
@@ -116,8 +115,6 @@ button, input, optgroup, select, textarea {
     border: 1px solid rgb(238, 238, 238);
     border-radius: 5px;
 }
-
-/* Media Queries */
 @media (min-width: 1350px) {
   .container {
     width: 1320px;
@@ -189,6 +186,12 @@ a.navbar-brand {
 	background-color: transparent;
   color: #1d939b;
   outline: none;
+}
+@media (max-width: 767px) {
+.navbar-nav > li > a, .navbar-nav > li:last-child > a {
+  border-top: 1px solid #eee;
+  padding: 15px;
+}
 }
 /* Navbar Toggle */
 .navbar-toggle {
@@ -290,6 +293,11 @@ a.navbar-brand {
   margin: 0;
   padding: 0 8px;
 }
+@media (max-width: 767px) {
+.active-user > p {
+  padding: 0 4px;
+}
+}
 /* Footer */
 .footer {
   background: #344044;
@@ -341,6 +349,11 @@ a.footer-social:hover {
 .social-icon:hover {
 	background: #9cbbc1;
 }
+@media (max-width: 767px) {
+.footer-social {
+    text-align: left;
+}
+}
 /* Top Bar Icons */
 .topbar-icon {
   background: #344044;
@@ -351,4 +364,9 @@ a.footer-social:hover {
 }
 .topbar-icon:hover {
 	background: #5d97a0;
+}
+@media (max-width: 767px) {
+.topbar-icon {
+  padding: 11px 4px;
+}
 }
