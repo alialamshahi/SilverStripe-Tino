@@ -182,7 +182,7 @@ a.navbar-brand {
 .navbar-nav > li:last-child > a {
   padding: 25px 0 25px 20px;
 }
-.navbar-nav > li.active > a {
+.navbar-nav > li > a.current, .navbar-nav > li > a.section {
   color: #464E4D;
 }
 .nav.navbar-nav > li > a:focus, .nav.navbar-nav > li > a:hover {
