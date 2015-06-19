@@ -14,4 +14,12 @@
     	"silverstripe/framework": ">=3.0",
 		"silverstripe/cms": ">=3.0"
     }
+    "extra": {
+	"installer-name": "tino",
+	"screenshots": [
+	      "http://alialamshahi.com/themes/silverstripe/tino/previews/homepage-june-19-2015-v1.jpg",
+	      "http://alialamshahi.com/themes/silverstripe/tino/previews/page-june-19-2015-v1.jpg",
+	      "http://alialamshahi.com/themes/silverstripe/tino/previews/page-mobile-june-19-2015-v1.jpg",
+	    ]
+    }
 }
