@@ -7,7 +7,7 @@ class HomePage extends Page {
 		'FeaturedContent' => 'Text',
 	);
 
-	private static $can_be_root = false;
+	private static $can_be_root = true;
 
 
 	public function getCMSFields() {

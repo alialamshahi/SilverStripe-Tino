@@ -70,3 +70,4 @@
 $Content
 </div>
 <% end_if %>
+</section>
