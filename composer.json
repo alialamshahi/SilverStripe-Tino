@@ -1,8 +1,8 @@
 {
-    "name": "tino",
+    "name": "alialamshahi/silverstripe-tino",
     "description": "Clean Responsive Business SilverStripe Template",
     "type": "silverstripe-theme",
-    "keywords": ["silverstripe", "theme"],
+    "keywords": ["silverstripe", "theme", "tino"],
     "license": "MIT",
     "authors": [
         {
@@ -11,7 +11,10 @@
         }
     ],
     "require": {
-        "composer/installers": "*",
-        "silverstripe/framework": ">=3.0"
+    	"silverstripe/framework": ">=3.0",
+		"silverstripe/cms": ">=3.0"
     }
+    "extra": {
+		"installer-name": "tino"
+	},
 }
