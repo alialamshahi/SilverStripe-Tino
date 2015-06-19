@@ -50,24 +50,29 @@
       <p class="lead">$FeaturedContent</p>
     </section>
 	<% end_if %>
-    <section id="home-content" class="container">
-      <div class="home-content">
+    <section id="home-showcase" class="container">
+      <div class="home-showcase">
         <div class="row">
           <div class="col-md-4 home-box">
-            <div class="home-content-icon"> <span class="home-icon icon-rocket"></span> </div>
+            <div class="home-showcase-icon"> <span class="home-icon icon-rocket"></span> </div>
             <div class="home-box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris nibh. Suspendisse sapien diam, tincidunt quis diam.</div>
           </div>
           <div class="col-md-4 home-box">
-            <div class="home-content-icon"> <span class="home-icon icon-globe"></span> </div>
+            <div class="home-showcase-icon"> <span class="home-icon icon-globe"></span> </div>
             <div class="home-box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris nibh. Suspendisse sapien diam, tincidunt quis diam.</div>
           </div>
           <div class="col-md-4 home-box">
-            <div class="home-content-icon"> <span class="home-icon icon-support"></span> </div>
+            <div class="home-showcase-icon"> <span class="home-icon icon-support"></span> </div>
             <div class="home-box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris nibh. Suspendisse sapien diam, tincidunt quis diam.</div>
           </div>
 <% if $$Content %>
-<div class="col-md-12 margin-top">
+<div class="clearfix"></div>
+          <div class="col-md-12 margin-top home-content">
 $Content
 </div>
 <% end_if %>
-</section>
+        </div>
+        <!-- /row --> 
+      </div>
+    </section>
+    <!--/.container -->

@@ -36,6 +36,7 @@ License:		The MIT License (MIT)
 	- Carousel
 	- Carousel Backgrounds
 	- Featured
+	- Home Showcase
 	- Home Content
 - Page Structure
 	- Box
@@ -398,18 +399,29 @@ a.navbar-brand {
   position: relative;
   width: 50px;
 }
-/* Home Content */
-.home-content {
+/* Home Showcase */
+.home-showcase {
   height: auto;
   padding: 80px 0 0;
 }
-.home-content-icon {
+.home-showcase-icon {
   margin-bottom: 20px;
   text-align: center;
 }
 .home-box-content {
   margin-bottom: 20px;
   text-align: center;
+}
+/* Home Content */
+.home-content {
+	text-align: center;
+}
+.home-content:before {
+  border-bottom: 3.1px solid #1d939b;
+  content: "";
+  display: block;
+  margin: 0 auto 30px;
+  width: 50px;
 }
 /* ==============================
    Page Structure
