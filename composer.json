@@ -1,0 +1,17 @@
+{
+    "name": "tino",
+    "description": "Clean Responsive Business SilverStripe Template",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Alamshahi",
+            "homepage": "http://www.alialamshahi.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=3.0"
+    }
+}
