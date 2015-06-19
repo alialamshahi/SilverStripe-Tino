@@ -18,6 +18,9 @@ class HomePage extends Page {
 		return $fields;
 	}
 	
+	private static $allowed_children = array (
+		'ShowCase'
+	);
 }
 
 class HomePage_Controller extends Page_Controller {

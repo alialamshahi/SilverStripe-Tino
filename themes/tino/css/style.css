@@ -404,6 +404,9 @@ a.navbar-brand {
   height: auto;
   padding: 80px 0 0;
 }
+.home-box {
+  text-align: center;
+}
 .home-showcase-icon {
   margin-bottom: 20px;
   text-align: center;
