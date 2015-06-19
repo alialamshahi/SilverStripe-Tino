@@ -1,5 +1,5 @@
 {
-    "name": "alialamshahi/silverstripe-tino",
+    "name": "alialamshahi/tino",
     "description": "Clean Responsive Business SilverStripe Template",
     "type": "silverstripe-theme",
     "keywords": ["silverstripe", "theme", "tino"],
@@ -14,7 +14,4 @@
     	"silverstripe/framework": ">=3.0",
 		"silverstripe/cms": ">=3.0"
     }
-    "extra": {
-		"installer-name": "tino"
-	},
 }
