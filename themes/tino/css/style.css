@@ -19,8 +19,12 @@ License:		The MIT License (MIT)
 
 - Page styles
 	- Links
+	- Buttons
 - Modifying Bootstrap
 	- Forms
+- Helper Classes
+	- Vertical Center
+	- Spacing Controls
 - Header and Navigation
 	- Branding
 	- Navigation
@@ -28,6 +32,13 @@ License:		The MIT License (MIT)
 	- Nav
 - Typography styles
 - Breadcrumb styles
+- HomePage Structure
+	- Hero
+	- Carousel
+	- Carousel Backgrounds
+	- Featured
+	- Home Showcase
+	- Home Content
 - Page Structure
 	- Box
 	- Top Bar
@@ -36,6 +47,7 @@ License:		The MIT License (MIT)
 - Graphics
 	- Social Icons
 	- Top Bar Icons
+	- Home Icons
 
 -------------------------------------------------------------------*/
 
@@ -85,10 +97,67 @@ a:focus, a:hover {
   color: #255a61;
   text-decoration: none;
 }
+/* ---- Buttons ---- */
+/* Button Default */
+.btn-default {
+  color: rgb(70, 78, 77);
+  background-color: #F8F8F9;
+  border-color: #F8F8F9;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+  background-color: #eaeaed;
+  border-color: #dddde1;
+}
+.btn-default.disabled:hover,
+.btn-default.disabled:focus,
+.btn-default.disabled:active,
+.btn-default.disabled.active,
+.btn-default[disabled]:hover,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default:hover,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default:active,
+fieldset[disabled] .btn-default.active {
+  background-color: #F8F8F9;
+  border-color: #F8F8F9;
+}
+/* Btton Primary */
+.btn-primary {
+  background-color: #1d939b;
+  border-color: #1d939b;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #197f86;
+  border-color: #156a70;
+}
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #1d939b;
+  border-color: #1d939b;
+}
+
 /* ==============================
    Modifying Bootstrap
    ============================== */
-/* Forms */
+/* ---- Forms ---- */
 .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {
     margin-left: 0;
 }
@@ -120,7 +189,22 @@ button, input, optgroup, select, textarea {
     width: 1320px;
   }
 }
-
+/* ==============================
+   Helper Classes
+   ============================== */
+/* ---- Vertical Center ---- */
+.v-center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  resize: both;
+}
+/* ---- Spacing Controls ---- */
+.margin-top {
+	margin-top: 40px;
+}
 /* ==============================
    Header and Navigation
    ============================== */
@@ -133,7 +217,7 @@ button, input, optgroup, select, textarea {
 .navbar {
   background: #fff;
 }
-/* Branding */
+/* ---- Branding ---- */
 .navbar-brand {
   display: table;
   float: left;
@@ -173,10 +257,25 @@ a.navbar-brand {
   color: #464E4D;
   text-decoration: none;
 }
-/* Navigation */
+@media (max-width: 992px) {
+.navbar-brand > h1 {
+  font-size: 21px;
+}
+}
+@media (max-width: 767px) {
+.navbar-brand > h1 {
+  font-size: 20px;
+}
+.navbar-brand > img {
+  height: 43px;
+  margin-right: 7px;
+  vertical-align: calc(50% - 28px);
+}
+}
+/* ---- Navigation ---- */
 .navbar-nav > li > a {
   line-height: 30px;
-  padding: 25px 20px;
+  padding: 25px 16px;
   text-transform: uppercase;
 }
 .navbar-nav > li > a {
@@ -185,7 +284,7 @@ a.navbar-brand {
   text-decoration: none;
 }
 .navbar-nav > li:last-child > a {
-  padding: 25px 0 25px 20px;
+  padding: 25px 0 25px 16px;
 }
 .navbar-nav > li > a.current, .navbar-nav > li > a.section {
   color: #464E4D;
@@ -195,13 +294,18 @@ a.navbar-brand {
   color: #1d939b;
   outline: none;
 }
+@media (max-width: 992px) {
+.navbar-nav > li > a, .navbar-nav > li:last-child > a {
+  padding: 25px 10px;
+}
+}
 @media (max-width: 767px) {
 .navbar-nav > li > a, .navbar-nav > li:last-child > a {
   border-top: 1px solid #eee;
   padding: 15px;
 }
 }
-/* Navbar Toggle */
+/* ---- Navbar Toggle ---- */
 .navbar-toggle {
     margin-top: 24px;
 }
@@ -210,7 +314,7 @@ a.navbar-brand {
     height: 3px;
     background: #464E4D;
 }
-/* Nav */
+/* ---- Nav ---- */
 .nav > li > a:focus, .nav > li > a:hover {
     background-color: #F8F8F9;
 }
@@ -238,7 +342,7 @@ a.navbar-brand {
     position: absolute;
     display: block;
     border-bottom: 3.1px solid #1D939B;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 /* ==============================
    Breadcrumb styles
@@ -266,9 +370,129 @@ a.navbar-brand {
   padding: 0 8px;
 }
 /* ==============================
+   HomePage Structure
+   ============================== */
+/* ---- Hero ---- */
+#hero {
+  background: #249176;
+  height: 70vh;
+  min-height: 320px;
+}
+/* ---- Carousel ---- */
+.carousel {
+    position: relative;
+    height: 70vh;
+    min-height: 320px;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 70vh;
+    min-height: 320px;
+}
+.carousel-inner > .item {
+    height: 70vh;
+	min-height: 320px;
+}
+.carousel .v-center {
+  height: 70vh;
+  min-height: 320px;
+  width: 80%;
+}
+.carousel-caption {
+  bottom: unset;
+  color: #fff;
+  left: unset;
+  padding-bottom: 0;
+  padding-top: 0;
+  position: relative;
+  right: unset;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.carousel-caption > h1, .carousel-caption > h2, .carousel-caption > h3, .carousel-caption > h4, .carousel-caption > h5 {
+  margin: 0 0 15px 0;
+}
+.carousel-caption > p {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+.carousel-caption > h1 {
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+.carousel-caption > h1 {
+  font-size: 30px;
+}
+.carousel-caption > p {
+  font-size: 16px;
+  margin: 0;
+}
+}
+/* ---- Carousel Backgrounds ---- */
+	/*
+		You can edit carousel backgrounds here, leaving a background without image or color 
+		gives you a primary color background.
+	*/
+.slide-01 {
+  background: rgba(0, 0, 0, 0) url("../img/slide-bg-a.jpg") no-repeat scroll left center / cover ;
+}
+.slide-02 {
+  background: rgba(0, 0, 0, 0) url("../img/slide-bg-b.jpg") no-repeat scroll left center / cover ;
+}
+.slide-03 {
+  background: rgba(0, 0, 0, 0) url("../img/slide-bg-c.jpg") no-repeat scroll left center / cover ;
+}
+/* ---- Featured ---- */
+#featured {
+  background: #fff;
+  height: auto;
+  padding: 60px 15%;
+  text-align: center;
+}
+#featured > h1::after {
+  border-bottom: 3.1px solid #1d939b;
+  content: "";
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  width: 50px;
+}
+/* ---- Home Showcase ---- */
+.home-showcase {
+  height: auto;
+  padding: 80px 0 0;
+}
+.home-box {
+  text-align: center;
+}
+.home-showcase-icon {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.home-box-content {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* ---- Home Content ---- */
+.home-content {
+	text-align: center;
+}
+.home-content:before {
+  border-bottom: 3.1px solid #1d939b;
+  content: "";
+  display: block;
+  margin: 0 auto 30px;
+  width: 50px;
+}
+/* ==============================
    Page Structure
    ============================== */
-/* Box */
+/* ---- Box ---- */
 .box > header {
   background: #fff;
   padding: 18px 15px;
@@ -284,7 +508,7 @@ a.navbar-brand {
 	background: #fff;
   padding: 10px;
 }
-/* Top Bar */
+/* ---- Top Bar ---- */
 .top-bar {
   background: #344044 none repeat scroll 0 0;
   color: #f8f8f9;
@@ -306,7 +530,7 @@ a.navbar-brand {
   padding: 0 4px;
 }
 }
-/* Footer */
+/* ---- Footer ---- */
 .footer {
   background: #344044;
   color: #5d97a0;
@@ -320,7 +544,7 @@ a.navbar-brand {
   margin: 0;
   padding: 8px 0;
 }
-/* Footer Navigation */
+/* ---- Footer Navigation ---- */
 #footer-navbar > .navbar-nav > li > a {
   border: medium none;
   font-size: 12px;
@@ -339,7 +563,7 @@ a.navbar-brand {
 /* ==============================
    Graphics
    ============================== */
-/* Socila Icons */
+/* ---- Socila Icons ---- */
 .footer-social {
     height: 35px;
     line-height: 35px;
@@ -363,7 +587,7 @@ a.footer-social:hover {
     text-align: left;
 }
 }
-/* Top Bar Icons */
+/* ---- Top Bar Icons ---- */
 .topbar-icon {
   background: #344044;
   border-radius: 0;
@@ -378,4 +602,14 @@ a.footer-social:hover {
 .topbar-icon {
   padding: 11px 4px;
 }
+}
+/* ---- Home Icons ---- */
+.home-icon {
+  background: #1d939b none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #f8f8f9;
+  font-size: 34px;
+  height: 50px;
+  line-height: 65px;
+  padding: 10px;
 }

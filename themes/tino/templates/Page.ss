@@ -22,6 +22,23 @@ $MetaTags(false)
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="{$ThemeDir}/img/icon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="{$ThemeDir}/img/icon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{$ThemeDir}/img/icon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="{$ThemeDir}/img/icon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="{$ThemeDir}/img/icon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="{$ThemeDir}/img/icon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="{$ThemeDir}/img/icon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="{$ThemeDir}/img/icon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{$ThemeDir}/img/icon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="{$ThemeDir}/img/icon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="{$ThemeDir}/img/icon/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="{$ThemeDir}/img/icon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="{$ThemeDir}/img/icon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="{$ThemeDir}/img/icon/favicon-16x16.png" sizes="16x16">
+
 </head>
 <body>
 <div class="container-fluid">
@@ -30,52 +47,7 @@ $MetaTags(false)
 <% include TopBar %> 
 <% include MainNav %> 
 
-    <section id="breadcrumb" class="container">
-      <ol class="breadcrumb">
-        $Breadcrumbs
-      </ol>
-      <!-- /breadcrumb --> 
-    </section>
-    <!--/.container -->
-    
-    <section id="main-content" class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="page-header">
-            <h1>$Title</h1>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <article>
-            $Content
-			$Form
-			$Pagecomments
-          </article>
-        </div>
-        <!--/.col-md-8 -->
-        <aside class="col-md-4">
-		<% if $Menu(2) %>
-          <section class="box">
-            <header>
-              <h2>Side Navigation</h2>
-            </header>
-            <article>
-              <nav>
-                <ul class="nav">
-                  <% loop $Menu(2) %>
-  <li><a class=”$LinkingMode” href=$Link title=”Go to the $Title page”>$MenuTitle</a></li>
-<% end_loop %>
-                </ul>
-              </nav>
-            </article>
-          </section>
-		  <% end_if %>
-        </aside>
-        <!--/.col-md-4 --> 
-      </div>
-      <!-- /row --> 
-    </section>
-    <!--/.container -->
+$Layout
     
 <% include Footer %> 
   </div>
