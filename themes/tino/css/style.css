@@ -77,129 +77,101 @@ Headings:           "Open Sans", arial, sans-serif;
    Page styles
    ============================== */
 body {
-  background-color: #f8f8f9;
-  color: #464e4d;
-  font-family: "Open Sans",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
+	background-color: #f8f8f9;
+	color: #464e4d;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
 }
 /* ---- Links ---- */
 a {
-  text-decoration: none;
-  color: #1d939b;
-  -ms-transition: color 0.2s ease;
-  -webkit-transition: color 0.2s ease;
-  -moz-transition: color 0.2s ease;
-  -o-transition: color 0.2s ease;
-  transition: color 0.2s ease;
+	text-decoration: none;
+	color: #1d939b;
+	-ms-transition: color 0.2s ease;
+	-webkit-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+	transition: color 0.2s ease;
 }
 a:focus, a:hover {
-  color: #255a61;
-  text-decoration: none;
+	color: #255a61;
+	text-decoration: none;
 }
 /* ---- Buttons ---- */
 /* Button Default */
 .btn-default {
-  color: rgb(70, 78, 77);
-  background-color: #F8F8F9;
-  border-color: #F8F8F9;
+	color: rgb(70, 78, 77);
+	background-color: #F8F8F9;
+	border-color: #F8F8F9;
 }
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active {
-  background-color: #eaeaed;
-  border-color: #dddde1;
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+	background-color: #eaeaed;
+	border-color: #dddde1;
 }
-.btn-default.disabled:hover,
-.btn-default.disabled:focus,
-.btn-default.disabled:active,
-.btn-default.disabled.active,
-.btn-default[disabled]:hover,
-.btn-default[disabled]:focus,
-.btn-default[disabled]:active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default:hover,
-fieldset[disabled] .btn-default:focus,
-fieldset[disabled] .btn-default:active,
-fieldset[disabled] .btn-default.active {
-  background-color: #F8F8F9;
-  border-color: #F8F8F9;
+.btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+	background-color: #F8F8F9;
+	border-color: #F8F8F9;
 }
 /* Btton Primary */
 .btn-primary {
-  background-color: #1d939b;
-  border-color: #1d939b;
+	background-color: #1d939b;
+	border-color: #1d939b;
 }
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active {
-  background-color: #197f86;
-  border-color: #156a70;
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+	background-color: #197f86;
+	border-color: #156a70;
 }
-.btn-primary.disabled:hover,
-.btn-primary.disabled:focus,
-.btn-primary.disabled:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled]:hover,
-.btn-primary[disabled]:focus,
-.btn-primary[disabled]:active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary:hover,
-fieldset[disabled] .btn-primary:focus,
-fieldset[disabled] .btn-primary:active,
-fieldset[disabled] .btn-primary.active {
-  background-color: #1d939b;
-  border-color: #1d939b;
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+	background-color: #1d939b;
+	border-color: #1d939b;
 }
-
 /* ==============================
    Modifying Bootstrap
    ============================== */
 /* ---- Forms ---- */
 .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {
-    margin-left: 0;
+	margin-left: 0;
 }
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.42857;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    -moz-user-select: none;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.42857;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
 	background: rgb(93, 151, 160);
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    color: #F8F8F9;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #F8F8F9;
 }
 button, input, optgroup, select, textarea {
-    padding: 4px 8px;
-    border: 1px solid rgb(238, 238, 238);
-    border-radius: 5px;
+	padding: 4px 8px;
+	border: 1px solid rgb(238, 238, 238);
+	border-radius: 5px;
 }
+
 @media (min-width: 1350px) {
-  .container {
-    width: 1320px;
-  }
+.container {
+	width: 1320px;
+}
 }
 /* ==============================
    Helper Classes
    ============================== */
 /* ---- Vertical Center ---- */
 .v-center {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  resize: both;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	resize: both;
 }
 /* ---- Spacing Controls ---- */
 .margin-top {
@@ -209,140 +181,143 @@ button, input, optgroup, select, textarea {
    Header and Navigation
    ============================== */
 .navbar {
-  border: none solid transparent;
-  margin-bottom: 0;
-  min-height: 50px;
-  position: relative;
+	border: none solid transparent;
+	margin-bottom: 0;
+	min-height: 50px;
+	position: relative;
 }
 .navbar {
-  background: #fff;
+	background: #fff;
 }
 /* ---- Branding ---- */
 .navbar-brand {
-  display: table;
-  float: left;
-  font-size: 20px;
-  font-weight: 700;
-  height: 80px;
-  line-height: 30px;
-  padding: 0 15px;
-  text-transform: uppercase;
+	display: table;
+	float: left;
+	font-size: 20px;
+	font-weight: 700;
+	height: 80px;
+	line-height: 30px;
+	padding: 0 15px;
+	text-transform: uppercase;
 }
 .navbar-brand > img {
-  display: inline-block;
-  height: 50px;
-  margin-right: 10px;
-  vertical-align: calc(50% - 31px);
-  width: auto;
+	display: inline-block;
+	height: 50px;
+	margin-right: 10px;
+	vertical-align: calc(50% - 31px);
+	width: auto;
 }
 .navbar-brand > h1 {
-  display: inline-block;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 30px;
-  margin: 25px 0;
+	display: inline-block;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 30px;
+	margin: 25px 0;
 }
 .navbar-brand > p {
-  color: #a3acab;
-  display: table-cell;
-  font-size: 12px;
-  font-weight: normal;
-  letter-spacing: 1.2px;
-  line-height: 14px;
-  margin: 0;
-  padding: 0 10px;
-  text-transform: capitalize;
+	color: #a3acab;
+	display: table-cell;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 1.2px;
+	line-height: 14px;
+	margin: 0;
+	padding: 0 10px;
+	text-transform: capitalize;
 }
 a.navbar-brand {
-  color: #464E4D;
-  text-decoration: none;
+	color: #464E4D;
+	text-decoration: none;
 }
+
 @media (max-width: 992px) {
 .navbar-brand > h1 {
-  font-size: 21px;
+	font-size: 21px;
 }
 }
+
 @media (max-width: 767px) {
 .navbar-brand > h1 {
-  font-size: 20px;
+	font-size: 20px;
 }
 .navbar-brand > img {
-  height: 43px;
-  margin-right: 7px;
-  vertical-align: calc(50% - 28px);
+	height: 43px;
+	margin-right: 7px;
+	vertical-align: calc(50% - 28px);
 }
 }
 /* ---- Navigation ---- */
 .navbar-nav > li > a {
-  line-height: 30px;
-  padding: 25px 16px;
-  text-transform: uppercase;
+	line-height: 30px;
+	padding: 25px 16px;
+	text-transform: uppercase;
 }
 .navbar-nav > li > a {
-  color: #9cbbc1;
-  font-weight: 600;
-  text-decoration: none;
+	color: #9cbbc1;
+	font-weight: 600;
+	text-decoration: none;
 }
 .navbar-nav > li:last-child > a {
-  padding: 25px 0 25px 16px;
+	padding: 25px 0 25px 16px;
 }
 .navbar-nav > li > a.current, .navbar-nav > li > a.section {
-  color: #464E4D;
+	color: #464E4D;
 }
 .nav.navbar-nav > li > a:focus, .nav.navbar-nav > li > a:hover {
 	background-color: transparent;
-  color: #1d939b;
-  outline: none;
+	color: #1d939b;
+	outline: none;
 }
+
 @media (max-width: 992px) {
 .navbar-nav > li > a, .navbar-nav > li:last-child > a {
-  padding: 25px 10px;
+	padding: 25px 10px;
 }
 }
+
 @media (max-width: 767px) {
 .navbar-nav > li > a, .navbar-nav > li:last-child > a {
-  border-top: 1px solid #eee;
-  padding: 15px;
+	border-top: 1px solid #eee;
+	padding: 15px;
 }
 }
 /* ---- Navbar Toggle ---- */
 .navbar-toggle {
-    margin-top: 24px;
+	margin-top: 24px;
 }
 .navbar-toggle .icon-bar {
-    width: 23px;
-    height: 3px;
-    background: #464E4D;
+	width: 23px;
+	height: 3px;
+	background: #464E4D;
 }
 /* ---- Nav ---- */
 .nav > li > a:focus, .nav > li > a:hover {
-    background-color: #F8F8F9;
+	background-color: #F8F8F9;
 }
 .nav > li.active > a {
-    color: #464E4D;
+	color: #464E4D;
 }
-
 /* ==============================
    Typography styles
    ============================== */
 .page-header {
-  border-bottom: medium none;
-  margin: 20px 0;
-  padding-bottom: 4px;
+	border-bottom: medium none;
+	margin: 20px 0;
+	padding-bottom: 4px;
 }
 .page-header h1 {
-    color: rgb(29, 147, 155);
-    text-transform: uppercase;
-    font-size: 26px;
-    font-weight: 600;
+	color: rgb(29, 147, 155);
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: 600;
 }
 .page-header h1::after {
-    content: "";
-    width: 60px;
-    position: absolute;
-    display: block;
-    border-bottom: 3.1px solid #1D939B;
-    margin: 15px 0;
+	content: "";
+	width: 60px;
+	position: absolute;
+	display: block;
+	border-bottom: 3.1px solid #1D939B;
+	margin: 15px 0;
 }
 /* ==============================
    Breadcrumb styles
@@ -351,86 +326,87 @@ a.navbar-brand {
 	margin-bottom: 20px;
 }
 .breadcrumb {
-  background-color: transparent;
-  /*border-bottom: 1px solid #9cbbc1;*/
-  border-radius: 0;
-  color: #889493;
-  list-style: outside none none;
-  margin-bottom: 0;
-  padding: 18px 0;
+	background-color: transparent;
+	/*border-bottom: 1px solid #9cbbc1;*/
+	border-radius: 0;
+	color: #889493;
+	list-style: outside none none;
+	margin-bottom: 0;
+	padding: 18px 0;
 }
 .breadcrumb a {
-  color: #9cbbc1;
+	color: #9cbbc1;
 }
 .breadcrumb > .active {
-  color: #464E4D;
+	color: #464E4D;
 }
 .breadcrumb > li + li::before {
-  color: #9cbbc1;
-  padding: 0 8px;
+	color: #9cbbc1;
+	padding: 0 8px;
 }
 /* ==============================
    HomePage Structure
    ============================== */
 /* ---- Hero ---- */
 #hero {
-  background: #249176;
-  height: 70vh;
-  min-height: 320px;
+	background: #249176;
+	height: 70vh;
+	min-height: 320px;
 }
 /* ---- Carousel ---- */
 .carousel {
-    position: relative;
-    height: 70vh;
-    min-height: 320px;
+	position: relative;
+	height: 70vh;
+	min-height: 320px;
 }
 .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 70vh;
-    min-height: 320px;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: 70vh;
+	min-height: 320px;
 }
 .carousel-inner > .item {
-    height: 70vh;
+	height: 70vh;
 	min-height: 320px;
 }
 .carousel .v-center {
-  height: 70vh;
-  min-height: 320px;
-  width: 80%;
+	height: 70vh;
+	min-height: 320px;
+	width: 80%;
 }
 .carousel-caption {
-  bottom: unset;
-  color: #fff;
-  left: unset;
-  padding-bottom: 0;
-  padding-top: 0;
-  position: relative;
-  right: unset;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  z-index: 10;
+	bottom: unset;
+	color: #fff;
+	left: unset;
+	padding-bottom: 0;
+	padding-top: 0;
+	position: relative;
+	right: unset;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	z-index: 10;
 }
 .carousel-caption > h1, .carousel-caption > h2, .carousel-caption > h3, .carousel-caption > h4, .carousel-caption > h5 {
-  margin: 0 0 15px 0;
+	margin: 0 0 15px 0;
 }
 .carousel-caption > p {
-  font-size: 18px;
-  margin: 0 0 10px;
+	font-size: 18px;
+	margin: 0 0 10px;
 }
 .carousel-caption > h1 {
-  font-size: 48px;
-  font-weight: 800;
-  text-transform: uppercase;
+	font-size: 48px;
+	font-weight: 800;
+	text-transform: uppercase;
 }
+
 @media (max-width: 767px) {
 .carousel-caption > h1 {
-  font-size: 30px;
+	font-size: 30px;
 }
 .carousel-caption > p {
-  font-size: 16px;
-  margin: 0;
+	font-size: 16px;
+	margin: 0;
 }
 }
 /* ---- Carousel Backgrounds ---- */
@@ -439,177 +415,181 @@ a.navbar-brand {
 		gives you a primary color background.
 	*/
 .slide-01 {
-  background: rgba(0, 0, 0, 0) url("../img/slide-bg-a.jpg") no-repeat scroll left center / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/slide-bg-a.jpg") no-repeat scroll left center / cover;
 }
 .slide-02 {
-  background: rgba(0, 0, 0, 0) url("../img/slide-bg-b.jpg") no-repeat scroll left center / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/slide-bg-b.jpg") no-repeat scroll left center / cover;
 }
 .slide-03 {
-  background: rgba(0, 0, 0, 0) url("../img/slide-bg-c.jpg") no-repeat scroll left center / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/slide-bg-c.jpg") no-repeat scroll left center / cover;
 }
 /* ---- Featured ---- */
 #featured {
-  background: #fff;
-  height: auto;
-  padding: 60px 15%;
-  text-align: center;
+	background: #fff;
+	height: auto;
+	padding: 60px 15%;
+	text-align: center;
 }
 #featured > h1::after {
-  border-bottom: 3.1px solid #1d939b;
-  content: "";
-  display: block;
-  margin: 20px auto;
-  position: relative;
-  width: 50px;
+	border-bottom: 3.1px solid #1d939b;
+	content: "";
+	display: block;
+	margin: 20px auto;
+	position: relative;
+	width: 50px;
 }
 /* ---- Home Showcase ---- */
 .home-showcase {
-  height: auto;
-  padding: 80px 0 0;
+	height: auto;
+	padding: 80px 0 0;
 }
 .home-box {
-  text-align: center;
+	margin-bottom: 40px;
+	text-align: center;
 }
 .home-showcase-icon {
-  margin-bottom: 20px;
-  text-align: center;
+	margin-bottom: 20px;
+	text-align: center;
 }
 .home-box-content {
-  margin-bottom: 20px;
-  text-align: center;
+	margin-bottom: 20px;
+	text-align: center;
 }
 /* ---- Home Content ---- */
 .home-content {
 	text-align: center;
 }
 .home-content:before {
-  border-bottom: 3.1px solid #1d939b;
-  content: "";
-  display: block;
-  margin: 0 auto 30px;
-  width: 50px;
+	border-bottom: 3.1px solid #1d939b;
+	content: "";
+	display: block;
+	margin: 0 auto 30px;
+	width: 50px;
 }
 /* ==============================
    Page Structure
    ============================== */
 /* ---- Box ---- */
 .box > header {
-  background: #fff;
-  padding: 18px 15px;
-  border-bottom: 1px solid #f8f8f9;
+	background: #fff;
+	padding: 18px 15px;
+	border-bottom: 1px solid #f8f8f9;
 }
 .box > header h2 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-  text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0;
+	text-transform: uppercase;
 }
 .box > article {
 	background: #fff;
-  padding: 10px;
+	padding: 10px;
 }
 /* ---- Top Bar ---- */
 .top-bar {
-  background: #344044 none repeat scroll 0 0;
-  color: #f8f8f9;
-  font-size: 10px;
-  height: 36px;
-  z-index: 1;
+	background: #344044 none repeat scroll 0 0;
+	color: #f8f8f9;
+	font-size: 10px;
+	height: 36px;
+	z-index: 1;
 }
 .active-user {
-  line-height: 36px;
-  text-align: right;
+	line-height: 36px;
+	text-align: right;
 }
 .active-user > p {
-  display: inline;
-  margin: 0;
-  padding: 0 8px;
+	display: inline;
+	margin: 0;
+	padding: 0 8px;
 }
+
 @media (max-width: 767px) {
 .active-user > p {
-  padding: 0 4px;
+	padding: 0 4px;
 }
 }
 /* ---- Footer ---- */
 .footer {
-  background: #344044;
-  color: #5d97a0;
-  font-size: 1.3rem;
-  margin-top: 80px;
-  padding: 60px 0;
+	background: #344044;
+	color: #5d97a0;
+	font-size: 1.3rem;
+	margin-top: 80px;
+	padding: 60px 0;
 }
 .footer-brand h1 {
-  color: #f8f8f9;
-  font-size: 22px;
-  margin: 0;
-  padding: 8px 0;
+	color: #f8f8f9;
+	font-size: 22px;
+	margin: 0;
+	padding: 8px 0;
 }
 /* ---- Footer Navigation ---- */
 #footer-navbar > .navbar-nav > li > a {
-  border: medium none;
-  font-size: 12px;
-  line-height: 20px;
-  padding: 10px 15px;
+	border: medium none;
+	font-size: 12px;
+	line-height: 20px;
+	padding: 10px 15px;
 }
 #footer-navbar > .navbar-nav > li > a {
-  color: #5d97a0;
-  font-weight: 600;
-  text-decoration: none;
+	color: #5d97a0;
+	font-weight: 600;
+	text-decoration: none;
 }
 #footer-navbar > .navbar-nav > li > a:focus, #footer-navbar > .navbar-nav > li > a:hover {
-  color: #9cbbc1;
-  text-decoration: none;
+	color: #9cbbc1;
+	text-decoration: none;
 }
 /* ==============================
    Graphics
    ============================== */
 /* ---- Socila Icons ---- */
 .footer-social {
-    height: 35px;
-    line-height: 35px;
-    text-align: right;
+	height: 35px;
+	line-height: 35px;
+	text-align: right;
 	margin-bottom: 15px;
 }
 a.footer-social:hover {
 	text-decoration: none;
 }
 .social-icon {
-  background: #5d97a0;
-  border-radius: 50%;
-  color: #f8f8f9;
-  padding: 8px;
+	background: #5d97a0;
+	border-radius: 50%;
+	color: #f8f8f9;
+	padding: 8px;
 }
 .social-icon:hover {
 	background: #9cbbc1;
 }
+
 @media (max-width: 767px) {
 .footer-social {
-    text-align: left;
+	text-align: left;
 }
 }
 /* ---- Top Bar Icons ---- */
 .topbar-icon {
-  background: #344044;
-  border-radius: 0;
-  color: #f8f8f9;
-  font-size: 10px;
-  padding: 11px;
+	background: #344044;
+	border-radius: 0;
+	color: #f8f8f9;
+	font-size: 10px;
+	padding: 11px;
 }
 .topbar-icon:hover {
 	background: #5d97a0;
 }
+
 @media (max-width: 767px) {
 .topbar-icon {
-  padding: 11px 4px;
+	padding: 11px 4px;
 }
 }
 /* ---- Home Icons ---- */
 .home-icon {
-  background: #1d939b none repeat scroll 0 0;
-  border-radius: 50%;
-  color: #f8f8f9;
-  font-size: 34px;
-  height: 50px;
-  line-height: 65px;
-  padding: 10px;
+	background: #1d939b none repeat scroll 0 0;
+	border-radius: 50%;
+	color: #f8f8f9;
+	font-size: 34px;
+	height: 50px;
+	line-height: 65px;
+	padding: 10px;
 }
