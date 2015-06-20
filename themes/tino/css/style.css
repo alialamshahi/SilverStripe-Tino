@@ -19,6 +19,7 @@ License:		The MIT License (MIT)
 
 - Page styles
 	- Links
+	- Buttons
 - Modifying Bootstrap
 	- Forms
 - Helper Classes
@@ -46,6 +47,7 @@ License:		The MIT License (MIT)
 - Graphics
 	- Social Icons
 	- Top Bar Icons
+	- Home Icons
 
 -------------------------------------------------------------------*/
 
@@ -95,10 +97,67 @@ a:focus, a:hover {
   color: #255a61;
   text-decoration: none;
 }
+/* ---- Buttons ---- */
+/* Button Default */
+.btn-default {
+  color: rgb(70, 78, 77);
+  background-color: #F8F8F9;
+  border-color: #F8F8F9;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+  background-color: #eaeaed;
+  border-color: #dddde1;
+}
+.btn-default.disabled:hover,
+.btn-default.disabled:focus,
+.btn-default.disabled:active,
+.btn-default.disabled.active,
+.btn-default[disabled]:hover,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default:hover,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default:active,
+fieldset[disabled] .btn-default.active {
+  background-color: #F8F8F9;
+  border-color: #F8F8F9;
+}
+/* Btton Primary */
+.btn-primary {
+  background-color: #1d939b;
+  border-color: #1d939b;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #197f86;
+  border-color: #156a70;
+}
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #1d939b;
+  border-color: #1d939b;
+}
+
 /* ==============================
    Modifying Bootstrap
    ============================== */
-/* Forms */
+/* ---- Forms ---- */
 .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {
     margin-left: 0;
 }
@@ -133,7 +192,7 @@ button, input, optgroup, select, textarea {
 /* ==============================
    Helper Classes
    ============================== */
-/* Vertical Center */
+/* ---- Vertical Center ---- */
 .v-center {
   align-items: center;
   display: flex;
@@ -142,7 +201,7 @@ button, input, optgroup, select, textarea {
   margin: 0 auto;
   resize: both;
 }
-/* Spacing Controls */
+/* ---- Spacing Controls ---- */
 .margin-top {
 	margin-top: 40px;
 }
@@ -158,7 +217,7 @@ button, input, optgroup, select, textarea {
 .navbar {
   background: #fff;
 }
-/* Branding */
+/* ---- Branding ---- */
 .navbar-brand {
   display: table;
   float: left;
@@ -213,7 +272,7 @@ a.navbar-brand {
   vertical-align: calc(50% - 28px);
 }
 }
-/* Navigation */
+/* ---- Navigation ---- */
 .navbar-nav > li > a {
   line-height: 30px;
   padding: 25px 16px;
@@ -246,7 +305,7 @@ a.navbar-brand {
   padding: 15px;
 }
 }
-/* Navbar Toggle */
+/* ---- Navbar Toggle ---- */
 .navbar-toggle {
     margin-top: 24px;
 }
@@ -255,7 +314,7 @@ a.navbar-brand {
     height: 3px;
     background: #464E4D;
 }
-/* Nav */
+/* ---- Nav ---- */
 .nav > li > a:focus, .nav > li > a:hover {
     background-color: #F8F8F9;
 }
@@ -313,13 +372,13 @@ a.navbar-brand {
 /* ==============================
    HomePage Structure
    ============================== */
-/* Hero */
+/* ---- Hero ---- */
 #hero {
   background: #249176;
   height: 70vh;
   min-height: 320px;
 }
-/* Carousel */
+/* ---- Carousel ---- */
 .carousel {
     position: relative;
     height: 70vh;
@@ -374,7 +433,11 @@ a.navbar-brand {
   margin: 0;
 }
 }
-/* Carousel Backgrounds */
+/* ---- Carousel Backgrounds ---- */
+	/*
+		You can edit carousel backgrounds here, leaving a background without image or color 
+		gives you a primary color background.
+	*/
 .slide-01 {
   background: rgba(0, 0, 0, 0) url("../img/slide-bg-a.jpg") no-repeat scroll left center / cover ;
 }
@@ -384,7 +447,7 @@ a.navbar-brand {
 .slide-03 {
   background: rgba(0, 0, 0, 0) url("../img/slide-bg-c.jpg") no-repeat scroll left center / cover ;
 }
-/* Featured */
+/* ---- Featured ---- */
 #featured {
   background: #fff;
   height: auto;
@@ -399,7 +462,7 @@ a.navbar-brand {
   position: relative;
   width: 50px;
 }
-/* Home Showcase */
+/* ---- Home Showcase ---- */
 .home-showcase {
   height: auto;
   padding: 80px 0 0;
@@ -415,7 +478,7 @@ a.navbar-brand {
   margin-bottom: 20px;
   text-align: center;
 }
-/* Home Content */
+/* ---- Home Content ---- */
 .home-content {
 	text-align: center;
 }
@@ -429,7 +492,7 @@ a.navbar-brand {
 /* ==============================
    Page Structure
    ============================== */
-/* Box */
+/* ---- Box ---- */
 .box > header {
   background: #fff;
   padding: 18px 15px;
@@ -445,7 +508,7 @@ a.navbar-brand {
 	background: #fff;
   padding: 10px;
 }
-/* Top Bar */
+/* ---- Top Bar ---- */
 .top-bar {
   background: #344044 none repeat scroll 0 0;
   color: #f8f8f9;
@@ -467,7 +530,7 @@ a.navbar-brand {
   padding: 0 4px;
 }
 }
-/* Footer */
+/* ---- Footer ---- */
 .footer {
   background: #344044;
   color: #5d97a0;
@@ -481,7 +544,7 @@ a.navbar-brand {
   margin: 0;
   padding: 8px 0;
 }
-/* Footer Navigation */
+/* ---- Footer Navigation ---- */
 #footer-navbar > .navbar-nav > li > a {
   border: medium none;
   font-size: 12px;
@@ -500,7 +563,7 @@ a.navbar-brand {
 /* ==============================
    Graphics
    ============================== */
-/* Socila Icons */
+/* ---- Socila Icons ---- */
 .footer-social {
     height: 35px;
     line-height: 35px;
@@ -524,7 +587,7 @@ a.footer-social:hover {
     text-align: left;
 }
 }
-/* Top Bar Icons */
+/* ---- Top Bar Icons ---- */
 .topbar-icon {
   background: #344044;
   border-radius: 0;
@@ -540,7 +603,7 @@ a.footer-social:hover {
   padding: 11px 4px;
 }
 }
-/* Home Icons */
+/* ---- Home Icons ---- */
 .home-icon {
   background: #1d939b none repeat scroll 0 0;
   border-radius: 50%;
