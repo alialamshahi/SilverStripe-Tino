@@ -2,43 +2,75 @@
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <% if $SlideA %><li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li><% end_if %>
+          <% if $SlideB %><li data-target="#carousel-example-generic" data-slide-to="1"></li><% end_if %>
+          <% if $SlideC %><li data-target="#carousel-example-generic" data-slide-to="2"></li><% end_if %>
+		  <% if $SlideD %><li data-target="#carousel-example-generic" data-slide-to="3"></li><% end_if %>
+		  <% if $SlideE %><li data-target="#carousel-example-generic" data-slide-to="4"></li><% end_if %>
         </ol>
         
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-          <div class="slide-01 item active"> 
-            <!-- if needed insert image here -->
+		  <% if $SlideA %>
+          <% with $SlideA %><div class="item active" style="background: rgba(0, 0, 0, 0) url("$URL") no-repeat scroll left center / cover;"><% end_with %>
             <div class="v-center">
               <div class="carousel-caption">
-                <h1>Sample caption</h1>
-                <p>Some sample text</p>
-                <a class="btn btn-primary" href="#">Learn More</a> </div>
+                <% if $SlideATitle %><h1>$SlideATitle</h1><% end_if %>
+                <% if $SlideADesc %><p>$SlideADesc</p><% end_if %>
+                <% if $SlideAButton %><a class="btn btn-primary" href="$SlideAButton">Learn More</a><% end_if %>
+			  </div>
             </div>
             <!-- /.v-center --> 
           </div>
-          <div class="slide-02 item"> 
-            <!-- if needed insert image here -->
+		  <% end_if %>
+          <% if $SlideB %>
+          <% with $SlideB %><div class="item active" style="background: rgba(0, 0, 0, 0) url("$URL") no-repeat scroll left center / cover;"><% end_with %>
             <div class="v-center">
               <div class="carousel-caption">
-                <h1>Sample caption</h1>
-                <p>Some sample text</p>
-                <a class="btn btn-default" href="#">Learn More</a> </div>
+                <% if $SlideBTitle %><h1>$SlideBTitle</h1><% end_if %>
+                <% if $SlideBDesc %><p>$SlideBDesc</p><% end_if %>
+                <% if $SlideBButton %><a class="btn btn-primary" href="$SlideBButton">Learn More</a><% end_if %>
+			  </div>
             </div>
             <!-- /.v-center --> 
           </div>
-          <div class="slide-03 item"> 
-            <!-- if needed insert image here -->
+		  <% end_if %>
+		  <% if $SlideC %>
+          <% with $SlideC %><div class="item active" style="background: rgba(0, 0, 0, 0) url("$URL") no-repeat scroll left center / cover;"><% end_with %>
             <div class="v-center">
               <div class="carousel-caption">
-                <h1>Sample caption</h1>
-                <p>Some sample text</p>
-                <a class="btn btn-default" href="#">Learn More</a> </div>
+                <% if $SlideCTitle %><h1>$SlideCTitle</h1><% end_if %>
+                <% if $SlideCDesc %><p>$SlideCDesc</p><% end_if %>
+                <% if $SlideCButton %><a class="btn btn-primary" href="$SlideCButton">Learn More</a><% end_if %>
+			  </div>
             </div>
             <!-- /.v-center --> 
           </div>
+		  <% end_if %>
+		  <% if $SlideD %>
+          <% with $SlideD %><div class="item active" style="background: rgba(0, 0, 0, 0) url("$URL") no-repeat scroll left center / cover;"><% end_with %>
+            <div class="v-center">
+              <div class="carousel-caption">
+                <% if $SlideDTitle %><h1>$SlideDTitle</h1><% end_if %>
+                <% if $SlideDDesc %><p>$SlideDDesc</p><% end_if %>
+                <% if $SlideDButton %><a class="btn btn-primary" href="$SlideDButton">Learn More</a><% end_if %>
+			  </div>
+            </div>
+            <!-- /.v-center --> 
+          </div>
+		  <% end_if %>
+		  <% if $SlideE %>
+          <% with $SlideE %><div class="item active" style="background: rgba(0, 0, 0, 0) url("$URL") no-repeat scroll left center / cover;"><% end_with %>
+            <div class="v-center">
+              <div class="carousel-caption">
+                <% if $SlideETitle %><h1>$SlideETitle</h1><% end_if %>
+                <% if $SlideEDesc %><p>$SlideEDesc</p><% end_if %>
+                <% if $SlideEButton %><a class="btn btn-primary" href="$SlideEButton">Learn More</a><% end_if %>
+			  </div>
+            </div>
+            <!-- /.v-center --> 
+          </div>
+		  <% end_if %>
         </div>
         
         <!-- Controls --> 

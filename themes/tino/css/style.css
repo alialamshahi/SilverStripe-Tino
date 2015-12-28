@@ -3,7 +3,7 @@
 [Master Stylesheet]
 
 Project:		Tino
-Version:		1.0
+Version:		1.1
 Description:	SilverStripe Template
 Primary use:	Business Websites  
 Author:     	Ali Alamshahi
@@ -35,7 +35,6 @@ License:		The MIT License (MIT)
 - HomePage Structure
 	- Hero
 	- Carousel
-	- Carousel Backgrounds
 	- Featured
 	- Home Showcase
 	- Home Content
@@ -409,20 +408,7 @@ a.navbar-brand {
 	margin: 0;
 }
 }
-/* ---- Carousel Backgrounds ---- */
-	/*
-		You can edit carousel backgrounds here, leaving a background without image or color 
-		gives you a primary color background.
-	*/
-.slide-01 {
-	background: rgba(0, 0, 0, 0) url("../img/slide-bg-a.jpg") no-repeat scroll left center / cover;
-}
-.slide-02 {
-	background: rgba(0, 0, 0, 0) url("../img/slide-bg-b.jpg") no-repeat scroll left center / cover;
-}
-.slide-03 {
-	background: rgba(0, 0, 0, 0) url("../img/slide-bg-c.jpg") no-repeat scroll left center / cover;
-}
+
 /* ---- Featured ---- */
 #featured {
 	background: #fff;
