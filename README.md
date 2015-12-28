@@ -13,9 +13,18 @@ A Clean Responsive SilverStripe Template
 # Previews
 Previews are also included in `Prevew` folder located on the tino template root.
 
- * http://alialamshahi.com/themes/silverstripe/tino/previews/homepage-june-19-2015-v1.jpg
- * http://alialamshahi.com/themes/silverstripe/tino/previews/page-june-19-2015-v1.jpg
- * http://alialamshahi.com/themes/silverstripe/tino/previews/page-mobile-june-19-2015-v1.jpg
+ * https://raw.githubusercontent.com/alialamshahi/SilverStripe-Tino/master/themes/tino/Preview/homepage-june-19-2015-v1.jpg
+ * https://raw.githubusercontent.com/alialamshahi/SilverStripe-Tino/master/themes/tino/Preview/page-june-19-2015-v1.jpg
+ * https://raw.githubusercontent.com/alialamshahi/SilverStripe-Tino/master/themes/tino/Preview/page-mobile-june-19-2015-v1.jpg
+
+# Version History
+v1.1 (29 Dec 2015)
+
+ * Added: Manage Homepage Slider inside CMS
+ 
+v1.0 (20 Jun 2015)
+
+ * First commit
 
 # Installing The Template
 
