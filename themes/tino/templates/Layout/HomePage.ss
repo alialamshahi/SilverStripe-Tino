@@ -12,7 +12,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
 		  <% if $SlideA %>
-          <% with $SlideA %><div class="item active" style="background: rgba(0, 0, 0, 0) url("$URL") no-repeat scroll left center / cover;"><% end_with %>
+          <% with $SlideA %><div class="item active" style="background: rgba(0, 0, 0, 0) url('$URL') no-repeat scroll left center / cover;"><% end_with %>
             <div class="v-center">
               <div class="carousel-caption">
                 <% if $SlideATitle %><h1>$SlideATitle</h1><% end_if %>
@@ -24,7 +24,7 @@
           </div>
 		  <% end_if %>
           <% if $SlideB %>
-          <% with $SlideB %><div class="item active" style="background: rgba(0, 0, 0, 0) url("$URL") no-repeat scroll left center / cover;"><% end_with %>
+          <% with $SlideB %><div class="item" style="background: rgba(0, 0, 0, 0) url('$URL') no-repeat scroll left center / cover;"><% end_with %>
             <div class="v-center">
               <div class="carousel-caption">
                 <% if $SlideBTitle %><h1>$SlideBTitle</h1><% end_if %>
@@ -36,7 +36,7 @@
           </div>
 		  <% end_if %>
 		  <% if $SlideC %>
-          <% with $SlideC %><div class="item active" style="background: rgba(0, 0, 0, 0) url("$URL") no-repeat scroll left center / cover;"><% end_with %>
+          <% with $SlideC %><div class="item" style="background: rgba(0, 0, 0, 0) url('$URL') no-repeat scroll left center / cover;"><% end_with %>
             <div class="v-center">
               <div class="carousel-caption">
                 <% if $SlideCTitle %><h1>$SlideCTitle</h1><% end_if %>
@@ -48,7 +48,7 @@
           </div>
 		  <% end_if %>
 		  <% if $SlideD %>
-          <% with $SlideD %><div class="item active" style="background: rgba(0, 0, 0, 0) url("$URL") no-repeat scroll left center / cover;"><% end_with %>
+          <% with $SlideD %><div class="item" style="background: rgba(0, 0, 0, 0) url('$URL') no-repeat scroll left center / cover;"><% end_with %>
             <div class="v-center">
               <div class="carousel-caption">
                 <% if $SlideDTitle %><h1>$SlideDTitle</h1><% end_if %>
@@ -60,7 +60,7 @@
           </div>
 		  <% end_if %>
 		  <% if $SlideE %>
-          <% with $SlideE %><div class="item active" style="background: rgba(0, 0, 0, 0) url("$URL") no-repeat scroll left center / cover;"><% end_with %>
+          <% with $SlideE %><div class="item" style="background: rgba(0, 0, 0, 0) url('$URL') no-repeat scroll left center / cover;"><% end_with %>
             <div class="v-center">
               <div class="carousel-caption">
                 <% if $SlideETitle %><h1>$SlideETitle</h1><% end_if %>
