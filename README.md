@@ -11,7 +11,7 @@ A Clean Responsive SilverStripe Template
  * Special fields on ShowCase Layout (as a children to homepage) to showcase areas of your services with icons.
  
 # Previews
-Previews are also included in `Prevew` folder located on the tino template root.
+Previews are also included in `Preview` folder located on the tino template root.
 
  * https://raw.githubusercontent.com/alialamshahi/SilverStripe-Tino/master/themes/tino/Preview/homepage-june-19-2015-v1.jpg
  * https://raw.githubusercontent.com/alialamshahi/SilverStripe-Tino/master/themes/tino/Preview/page-june-19-2015-v1.jpg
