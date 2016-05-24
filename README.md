@@ -33,3 +33,7 @@ v1.0 (20 Jun 2015)
  * Add the following to your `mysite/_config.php` file.  Remove any existing `SSViewer::set_theme` lines and replace it with the following line:
 
 		SSViewer::set_theme("tino");
+		
+* Updating the current theme in SilverStripe can also be done by changing the current theme in the Site Configuration panel (http://yoursite.com/admin/settings).
+ 
+ * Don't forget to explicitly create database tables and flush the cash by calling `yoursite.com/dev/build?flush=1`.
